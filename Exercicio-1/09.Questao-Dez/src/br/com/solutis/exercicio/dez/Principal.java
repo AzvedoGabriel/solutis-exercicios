@@ -10,6 +10,9 @@ public class Principal {
         int numb1 = 6, numb2 = 4;
 
         int calcDivisao = numb1 / numb2;
+        // Esse resultado não é necessariamente o ideal por conta da divisão dar numero "quebrado"
+        // no caso o resultado seria 1,5
         System.out.println(calcDivisao);
+
     }
 }

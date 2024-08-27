@@ -12,7 +12,7 @@ public class FuncSemEstudo extends Funcionario {
 
     @Override
     public void mostrarDetalhes() {
-        System.out.println("Nome: " + nome);
+        System.out.println("Nome: " + getNome());
         System.out.println("Código Funcional: " + codigoFuncional);
         System.out.println("Renda Total: R$ " + calcularRenda());
     }

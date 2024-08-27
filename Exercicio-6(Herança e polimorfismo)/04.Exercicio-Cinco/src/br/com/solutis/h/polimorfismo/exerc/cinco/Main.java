@@ -2,8 +2,8 @@ package br.com.solutis.h.polimorfismo.exerc.cinco;
 
 public class Main {
     public static void main(String[] args) {
-        Funcionario func1 = new Funcionario("João",
-                101, ACADEMICO.SEM_ESCOLARIDADE);
+        Funcionario func1 = new FuncionarioEnsBasico("João",
+                101, "Escolinha primária X - Ensino Basico");
         Funcionario func2 = new FuncionarioEnsBasico("Maria",
                 102, "Escola Primária ABC");
         Funcionario func3 = new FuncionarioEnsMedio("Carlos",

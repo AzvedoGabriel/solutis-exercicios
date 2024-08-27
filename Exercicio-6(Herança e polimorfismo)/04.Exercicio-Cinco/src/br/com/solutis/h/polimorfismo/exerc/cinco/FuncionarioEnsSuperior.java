@@ -4,7 +4,7 @@ public class FuncionarioEnsSuperior extends Funcionario {
     private String universidadeGraducao;
 
     public FuncionarioEnsSuperior(String nome, int codigoFuncional,String universidadeGraducao) {
-        super(nome, codigoFuncional, ACADEMICO.NIVEL_SUPERIOR);
+        super(nome, codigoFuncional);
         this.universidadeGraducao = universidadeGraducao;
     }
 
@@ -14,7 +14,7 @@ public class FuncionarioEnsSuperior extends Funcionario {
 
     @Override
     public void mostrarDetalhes() {
-        super.mostrarDetalhes();
+        System.out.println("Nome: " + getNome());
         System.out.println("Universidade: " + universidadeGraducao);
     }
 }

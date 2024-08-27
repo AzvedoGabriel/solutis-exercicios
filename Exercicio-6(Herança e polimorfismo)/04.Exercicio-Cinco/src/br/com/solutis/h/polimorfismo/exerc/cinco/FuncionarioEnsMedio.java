@@ -5,7 +5,7 @@ public class FuncionarioEnsMedio extends Funcionario {
 
 
     public FuncionarioEnsMedio(String nome, int codigoFuncional, String escolaMedio) {
-        super(nome, codigoFuncional, ACADEMICO.NIVEL_MEDIO);
+        super(nome, codigoFuncional);
         this.escolaMedio = escolaMedio;
     }
 
@@ -15,7 +15,7 @@ public class FuncionarioEnsMedio extends Funcionario {
 
     @Override
     public void mostrarDetalhes() {
-        super.mostrarDetalhes();
+        System.out.println("Nome: " + getNome());
         System.out.println("Escola de Ensino Médio: " + escolaMedio);
     }
 }

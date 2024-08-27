@@ -28,12 +28,12 @@ public class Principal {
         for (Funcionario f : funcionarios) {
             double renda = f.calcularRenda();
             custoTotal += renda;
-            if (f instanceof FuncionarioEnsBasico) {
-                custoBasico += renda;
-            } else if (f instanceof FuncionarioEnsMedio) {
-                custoMedio += renda;
-            } else if (f instanceof FuncionarioEnsSuperior) {
-                custoSuperior += renda;
+            switch (f) {
+                case FuncionarioEnsBasico funcionarioEnsBasico -> custoBasico += renda;
+                case FuncionarioEnsMedio funcionarioEnsMedio -> custoMedio += renda;
+                case FuncionarioEnsSuperior funcionarioEnsSuperior -> custoSuperior += renda;
+                default -> {
+                }
             }
         }
 

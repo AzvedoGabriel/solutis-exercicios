@@ -34,10 +34,10 @@ public class Main {
             }
         }
 
-        System.out.println("Custo Total: R$ " + custoTotal);
-        System.out.println("Custo Ensino Básico: R$ " + custoBasico);
-        System.out.println("Custo Ensino Médio: R$ " + custoMedio);
-        System.out.println("Custo Nível Superior: R$ " + custoSuperior);
+        System.out.printf("Custo Total: R$ %.2f \n", custoTotal);
+        System.out.printf("Custo Ensino Básico: R$ %.2f\n", custoBasico);
+        System.out.printf("Custo Ensino Médio: R$ %.2f\n", custoMedio);
+        System.out.printf("Custo Nível Superior: R$ %.2f\n", custoSuperior);
     }
 }
 

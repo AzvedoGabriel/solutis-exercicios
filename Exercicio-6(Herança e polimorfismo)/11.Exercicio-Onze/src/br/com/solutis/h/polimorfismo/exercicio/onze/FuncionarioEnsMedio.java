@@ -22,7 +22,7 @@ public class FuncionarioEnsMedio extends Funcionario {
                 "escola='" + escola + '\'' +
                 ", nome='" + nome + '\'' +
                 ", codigoFuncional=" + codigoFuncional +
-                ", comissao=" + comissao +
+                ", comissao=" + comissao.getNome() +
                 ", rendaBase=" + rendaBase +
                 '}';
     }

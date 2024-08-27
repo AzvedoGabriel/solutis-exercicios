@@ -21,7 +21,7 @@ public class FuncionarioEnsBasico extends Funcionario {
                 "escola='" + escola + '\'' +
                 ", nome='" + nome + '\'' +
                 ", codigoFuncional=" + codigoFuncional +
-                ", comissao=" + comissao +
+                ", comissao=" + comissao.getNome() +
                 ", rendaBase=" + rendaBase +
                 '}';
     }

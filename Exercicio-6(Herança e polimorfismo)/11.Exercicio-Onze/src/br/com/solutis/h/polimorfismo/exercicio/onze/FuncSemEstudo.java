@@ -15,7 +15,6 @@ public class FuncSemEstudo extends Funcionario {
         return "FuncSemEstudo{" +
                 "nome='" + nome + '\'' +
                 ", codigoFuncional=" + codigoFuncional +
-                ", comissao=" + comissao +
                 ", rendaBase=" + rendaBase +
                 '}';
     }

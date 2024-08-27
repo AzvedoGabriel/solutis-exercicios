@@ -41,6 +41,10 @@ public class Principal {
         System.out.println("Custo Ensino Básico: R$ " + custoBasico);
         System.out.println("Custo Ensino Médio: R$ " + custoMedio);
         System.out.println("Custo Nível Superior: R$ " + custoSuperior);
+        // Utilizando o for-each para imprimir os detalhes dos funcionários usando toString()
+        for (Funcionario f : funcionarios) {
+            System.out.println(f.toString());
+        }
     }
 }
 

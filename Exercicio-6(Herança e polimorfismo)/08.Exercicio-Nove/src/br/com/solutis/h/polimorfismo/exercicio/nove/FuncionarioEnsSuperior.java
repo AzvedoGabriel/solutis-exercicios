@@ -1,11 +1,12 @@
-package br.com.solutis.h.polimorfismo.exercicio.seis;
+package br.com.solutis.h.polimorfismo.exercicio.nove;
 
+import br.com.solutis.h.polimorfismo.exercicio.oito.Comissao;
 
 public class FuncionarioEnsSuperior extends Funcionario {
     private String universidade;
 
-    public FuncionarioEnsSuperior(String nome, int codigoFuncional, String universidade) {
-        super(nome, codigoFuncional);
+    public FuncionarioEnsSuperior(String nome, int codigoFuncional, Comissao comissao, String universidade) {
+        super(nome, codigoFuncional, comissao);
         this.universidade = universidade;
     }
 

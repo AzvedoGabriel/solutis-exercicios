@@ -1,22 +1,21 @@
 package br.com.solutis.h.polimorfismo.exercicio.seis;
 
-import br.com.solutis.h.polimorfismo.exerc.cinco.ACADEMICO;
-
 public class Main {
     public static void main(String[] args) {
-        Funcionario func1 = new Funcionario("João", 101, ACADEMICO.SEM_ESCOLARIDADE);
-        Funcionario func2 = new FuncionarioEnsBasico("Maria", 102, "Escola Primária ABC");
-        Funcionario func3 = new FuncionarioEnsMedio("Carlos", 103,  "Escola Secundária XYZ");
-        Funcionario func4 = new FuncionarioEnsSuperior("Ana", 104, "Universidade Federal");
+        // Criando instâncias dos diferentes tipos de funcionários
+        Funcionario funcionario1 = new FuncSemEstudo("Ana", 1);
+        Funcionario funcionario2 = new FuncionarioEnsBasico("Luis", 2, "Escola A");
+        Funcionario funcionario3 = new FuncionarioEnsMedio("Carlos", 3, "Escola B");
+        Funcionario funcionario4 = new FuncionarioEnsSuperior("João", 4, "Universidade X");
 
-        // Mostrando detalhes dos funcionários
-        func1.mostrarDetalhes();
-        System.out.println();
-        func2.mostrarDetalhes();
-        System.out.println();
-        func3.mostrarDetalhes();
-        System.out.println();
-        func4.mostrarDetalhes();
+        // Exibindo detalhes e renda total dos funcionários
+        funcionario1.mostrarDetalhes();
+        System.out.println(); // Linha em branco para separar
+        funcionario2.mostrarDetalhes();
+        System.out.println(); // Linha em branco para separar
+        funcionario3.mostrarDetalhes();
+        System.out.println(); // Linha em branco para separar
+        funcionario4.mostrarDetalhes();
     }
 }
 

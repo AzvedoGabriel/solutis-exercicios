@@ -1,11 +1,12 @@
-package br.com.solutis.h.polimorfismo.exercicio.seis;
+package br.com.solutis.h.polimorfismo.exercicio.nove;
 
+import br.com.solutis.h.polimorfismo.exercicio.oito.Comissao;
 
 public class FuncionarioEnsBasico extends Funcionario {
    private String escola;
 
-    public FuncionarioEnsBasico(String nome, int codigoFuncional, String escola) {
-        super(nome, codigoFuncional);
+    public FuncionarioEnsBasico(String nome, int codigoFuncional, Comissao comissao, String escola) {
+        super(nome, codigoFuncional, comissao);
         this.escola = escola;
     }
 
